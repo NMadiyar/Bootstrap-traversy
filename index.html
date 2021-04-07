@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Bootstrap</title>
+</head>
+<body>
+<!--class page-header создает для главного названия стиль с границей внизу-->
+<!-- тег small делает текст прозрачным-->
+<!--class lead делает <p> больше и отделяет его от обычного-->
+<div class="container">
+<!--    TYPOGRAPHY         -->
+    <h1 class="page-header">Hello World! <small>Secondary</small></h1>
+    <p class="lead"><mark>Lorem ipsum dolor sit amet</mark>, consectetur <del>adipisicing</del> elit. Ratione, sequi?</p>
+    <p>Lorem ipsum dolor <u>sit</u> amet, consectetur adipisicing elit. Ratione, sequi?</p>
+
+    <hr>
+<!--    ALIGNMENT and TRANSFORMATION      -->
+    <p class="text-left text-lowercase">Left aligned text</p>
+    <p class="text-center text-uppercase">Center aligned text</p>
+    <p class="text-right text-capitalize">Right aligned text</p>
+    <p class="text-justify">Justified text</p>
+    <p class="text-nowrap">No wrap text</p>
+
+    <hr>
+
+<!--    BLOCKQUOTE         -->
+<!--   blockquote отвечает за создание цитат, в нем можно поместить тег футер который используется для определения автора-->
+    <blockquote class="blockquote-reverse">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, repudiandae?</p>
+        <footer>Quote by <cite title="John Doe">John Doe</cite></footer>
+    </blockquote>
+
+    <hr>
+
+<!--    LISTS            -->
+    <ul class="list-unstyled">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+    </ul>
+<!--class="list-inline" ставит список в одну линию-->
+    <ul class="list-inline">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+    </ul>
+
+    <hr>
+
+<!--    CODE                    -->
+<!--    Дает дополнительные стили для тега <kbd> делает его черным-->
+    <code>&lt;h1&gt;Heading text&lt;/h1&gt;</code>
+    <br>
+    Change directory with <kbd>cd</kbd>
+    <br>
+    To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+    <hr>
+
+<!--    CONTEXTUAL COLORS       -->
+    <p class="text-primary">Hello World!</p> <!--дает голубоватый цвет-->
+    <p class="text-success">Hello World!</p>  <!-- дает зеленоватый цвет -->
+    <p class="text-info">Hello World!</p>   <!-- дает светло голубой цвет -->
+    <p class="text-warning">Hello World!</p> <!-- дает желтый цвет -->
+    <p class="text-danger">Hello World!</p> <!-- дает красный цвет-->
+    <p class="text-muted">Hello World!</p> <!-- дает ярко серый цвет-->
+
+    <hr>
+
+    <!--    CONTEXTUAL BACKGROUND COLORS       -->
+    <p class="bg-primary">Hello World!</p> <!--дает голубоватый цвет-->
+    <p class="bg-success">Hello World!</p>  <!-- дает зеленоватый цвет -->
+    <p class="bg-info">Hello World!</p>   <!-- дает светло голубой цвет -->
+    <p class="bg-warning">Hello World!</p> <!-- дает желтый цвет -->
+    <p class="bg-danger">Hello World!</p> <!-- дает красный цвет-->
+    <p class="bg-muted">Hello World!</p> <!-- дает ярко серый цвет-->
+</div>
+
+    <hr>
+
+    <div class="container">
+<!--        BUTTONS               -->
+<!--        для создания стандартной серой кнопки, при наведении которая затемняется используется class ="btn btn-default"
+при использовании просто class="btn" там делается стандартная и совсем не красивая кнопка-->
+        <button class="btn btn-default">Button</button>
+        <a href="#" class="btn btn-default" role="button">Link</a>
+        <input type="submit" class="btn btn-default" value="Input">
+        <hr>
+<!--        CONTEXTUAL BUTTONS       -->
+        <button class="btn btn-default">Button</button>
+        <button class="btn btn-primary">Primary button</button> <!-- Голубой цвет кнопки-->
+        <button class="btn btn-success">Success button</button> <!-- Зеленый цвет кнопки-->
+        <button class="btn btn-warning">Warning Button</button> <!-- Оранжевый цвет кнопки-->
+        <button class="btn btn-danger">Danger Button</button>  <!-- Красный цвет кнопки-->
+        <button class="btn btn-info">Info Button</button>  <!-- Ярко голубой цвет кнопки-->
+        <button class="btn btn-link">Link Button</button>  <!-- убирает границы и делает как ссылку-->
+
+        <hr>
+<!--        BUTTON SIZES          -->
+        <button class="btn btn-success btn-lg">Button Large</button>  <!-- btn-lg большая кнопка-->
+        <button class="btn btn-default">Button</button>
+        <button class="btn btn-primary btn-sm">Button</button>  <!-- btn-sm маленькая кнопка-->
+        <button class="btn btn-warning btn-xs">Button</button>  <!-- btn-xs самая маленькая  кнопка-->
+        <button class="btn btn-warning btn-xs" disabled>Button</button>  <!-- btn-xs самая маленькая  кнопка-->
+
+    </div>
+
+<!--        FORM                  -->
+<hr>
+    <div class="container">
+        <form class="form-group">
+            <label>Name</label>
+            <input class="form-control" type="text" placeholder="Add name">
+        </form>
+<!--class="form-group" используется для формы, задает отступ, практически ничем не отличается от стандартного-->
+        <form class="form-group">
+            <label>Email</label>
+            <input class="form-control" type="email" placeholder="Add email">
+        </form>
+<!--class="form-control" используется для значений формы, создается на всю ширину-->
+        <form class="form-group">
+            <label>Textarea</label>
+            <textarea class="form-control" placeholder="Add text"></textarea>
+        </form>
+        <div class="form-group">
+            <label>Gender</label>
+            <select class="form-group-sm">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+<!--class="help-block" создает блок с серым значением, которое дает подсказку-->
+        <div class="form-group">
+            <label>Upload file</label>
+            <input type="file">
+            <p class="help-block">Images only png or jpg</p>
+        </div>
+<!--class="checkbox" используется при создании чекбокса(галочки) задает отступы-->
+        <div class="checkbox">
+            <label>
+                <input type="checkbox">Check me out
+            </label>
+        </div>
+
+       <button type="submit" class="btn btn-default">Submit</button>
+
+        <hr>
+<!--           INLINE FORM              -->
+        <form class="form-inline">
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" placeholder="email">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Remember me
+                </label>
+                <button type="submit" class="btn btn-default">Login</button>
+            </div>
+        </form>
+    </div>
+
+<!--          LISTS                 -->
+<!--При использовании ul класс list-group используется, дальше к каждой его вещи добавляется класс list-group-item-->
+    <div class="container">
+        <ul class="list-group">
+            <li class="list-group-item">Item one</li>
+            <li class="list-group-item">Item two</li>
+            <li class="list-group-item">Item three</li>
+            <li class="list-group-item">Item four</li>
+        </ul>
+<!--        При использовании данного класса на теге <a> добавляется анимация ховера и при кликании он указывает
+active ссылку, на которую до этого кликнули, active делает его голубым-->
+<!--        class=list-group-item-success делает его зеленым -->
+        <div class="list-group">
+            <a href="#" class="list-group-item active">Item one</a>
+            <a href="#" class="list-group-item">Item two</a>
+            <a href="#" class="list-group-item list-group-item-success">Item three</a>
+            <a href="#" class="list-group-item">Item four</a>
+        </div>
+    </div>
+
+<!--           PANELS          -->
+<!--panel-primary создает панель с голубым цветом и границу вокруг всей панели-->
+    <div class="container">
+        <div class="panel panel-primary">
+           <div class="panel-heading">
+               <h3 class="panel-title">Panel Title</h3>
+           </div>
+            <div class="panel-body">
+                Panel Content
+            </div>
+            <div class="panel-footer">
+                Panel Footer
+            </div>
+        </div>
+        <hr>
+<!--        WELLS                -->
+<!--        well создает рамку -->
+        <div class="well">Hello World</div>
+        <div class="well well-lg">Hello World</div>
+        <div class="well well-sm">Hello World</div>
+
+        <hr>
+
+<!--        ALERTS            -->
+        <div class="alert alert-success" role="alert">Success alert</div>
+        <div class="alert alert-info" role="alert">Info alert</div>
+        <div class="alert alert-warning" role="alert">Warning alert</div>
+        <div class="alert alert-danger" role="alert">Danger alert</div>
+
+        <div class="alert alert-warning alert-dismissable" role="alert">
+            Close alerts
+            <button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+        </div>
+        <hr>
+<!--        PROGRESS BARS        -->
+<!--        Изначально создается wrapper class progress, внутри него уже создается progress-bar  -->
+<!--class progress-bar-striped делает ее в полоску-->
+<!--сlass active задает анимацию        -->
+        <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 50%">
+                50%
+            </div>
+        </div>
+    </div>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
